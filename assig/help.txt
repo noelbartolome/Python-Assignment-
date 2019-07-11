@@ -1,0 +1,10 @@
+    startbal = float(input("Enter your starting balance:"))
+    savings = bdo.Bdo(startbal)
+    pay = float(input("How much were you paid this week?:"))
+    print "Deposited"
+    savings.deposit(pay)
+    print "Your balance is:" , savings.getbalance()
+    cash = float(input("How much would you like to withdraw?"))
+    print "Withdrawed"
+    savings.withdraw(cash)
+    print "your account balance is", savings.getbalance()
